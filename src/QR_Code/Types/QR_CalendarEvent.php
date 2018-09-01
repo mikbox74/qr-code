@@ -72,7 +72,7 @@ class QR_CalendarEvent extends AbstractGenerator implements CodeType
      * @throws \QR_Code\Exceptions\EmptyEventSummaryException
      * @throws \QR_Code\Exceptions\InvalidEventDateException
      */
-    protected function validate (\DateTime $start, \DateTime $end, string $summary) : void
+    protected function validate (\DateTime $start, \DateTime $end, string $summary)
     {
         if ($this->validateDateTimeEnd($start, $end) === false) {
             throw new InvalidEventDateException('Event end date and time must be higher than Event start');

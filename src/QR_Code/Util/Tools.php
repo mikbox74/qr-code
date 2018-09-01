@@ -46,7 +46,7 @@ class Tools
     /**
      * Reset internal frames property
      */
-    public static function clearCache () : void
+    public static function clearCache ()
     {
         self::$frames = [];
     }
@@ -54,9 +54,8 @@ class Tools
     /**
      * Clear Temporary QR Code Files in TEMP_DIR directory
      *
-     * @return void
      */
-    public static function clearTemporaryQRCodes () : void
+    public static function clearTemporaryQRCodes ()
     {
         dropFilesBySubstring(TEMP_DIR, 'qr_code_');
     }
@@ -66,7 +65,7 @@ class Tools
      *
      * @param array $frame
      */
-    public static function dumpMask (array $frame) : void
+    public static function dumpMask (array $frame)
     {
         $width = count($frame);
         for ($y = 0; $y < $width; $y++) {
@@ -79,7 +78,7 @@ class Tools
     /**
      * Build application cache
      */
-    public static function buildCache () : void
+    public static function buildCache ()
     {
         Benchmark::mark('build_cache_start');
 

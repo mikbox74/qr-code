@@ -20,7 +20,7 @@ class Benchmark
      *
      * @param string $id
      */
-    public static function mark (string $id) : void
+    public static function mark (string $id)
     {
         list($usec, $sec) = explode(" ", microtime());
         $time = ((float) $usec + (float) $sec);

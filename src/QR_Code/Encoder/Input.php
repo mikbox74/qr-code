@@ -89,7 +89,7 @@ class Input
     /**
      * @param \QR_Code\Encoder\InputItem $entry
      */
-    public function appendEntry (InputItem $entry) : void
+    public function appendEntry (InputItem $entry)
     {
         $this->items[] = $entry;
     }

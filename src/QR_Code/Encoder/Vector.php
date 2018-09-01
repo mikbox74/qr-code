@@ -27,7 +27,7 @@ class Vector
      * @param int         $foreColor
      * @param bool        $cmyk
      */
-    public static function eps ($frame, $filename = false, int $pixelPerPoint = 4, int $outerFrame = 4, bool $saveAndPrint = false, int $backColor = 0xFFFFFF, int $foreColor = 0x000000, bool $cmyk = false) : void
+    public static function eps ($frame, $filename = false, int $pixelPerPoint = 4, int $outerFrame = 4, bool $saveAndPrint = false, int $backColor = 0xFFFFFF, int $foreColor = 0x000000, bool $cmyk = false)
     {
         $vect = self::vectEPS($frame, $pixelPerPoint, $outerFrame, $backColor, $foreColor, $cmyk);
 
@@ -148,7 +148,7 @@ class Vector
      * @param int         $backColor
      * @param int         $foreColor
      */
-    public static function svg ($frame, $filename = false, int $pixelPerPoint = 4, int $outerFrame = 4, bool $saveAndPrint = false, int $backColor, int $foreColor) : void
+    public static function svg ($frame, $filename = false, int $pixelPerPoint = 4, int $outerFrame = 4, bool $saveAndPrint = false, int $backColor, int $foreColor)
     {
         $vect = self::vectSVG($frame, $pixelPerPoint, $outerFrame, $backColor, $foreColor);
 

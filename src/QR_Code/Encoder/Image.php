@@ -24,7 +24,7 @@ class Image
      * @param int   $backColor
      * @param int   $foreColor
      */
-    public static function png (array $frame, $filename = false, int $pixelPerPoint = 4, int $outerFrame = 4, bool $saveAndPrint = false, int $backColor = QR_WHITE, int $foreColor = QR_BLACK) : void
+    public static function png (array $frame, $filename = false, int $pixelPerPoint = 4, int $outerFrame = 4, bool $saveAndPrint = false, int $backColor = QR_WHITE, int $foreColor = QR_BLACK)
     {
         $image = self::image($frame, $pixelPerPoint, $outerFrame, $backColor, $foreColor);
 
@@ -53,7 +53,7 @@ class Image
      * @param int         $outerFrame
      * @param int         $quality
      */
-    public static function jpg (array $frame, $filename = false, int $pixelPerPoint = 8, int $outerFrame = 4, int $quality = 85) : void
+    public static function jpg (array $frame, $filename = false, int $pixelPerPoint = 8, int $outerFrame = 4, int $quality = 85)
     {
         $image = self::image($frame, $pixelPerPoint, $outerFrame);
 

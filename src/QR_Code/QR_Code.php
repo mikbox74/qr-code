@@ -182,7 +182,7 @@ class QR_Code
      * @param int         $back_color
      * @param int         $fore_color
      */
-    public static function png (string $text, $outfile = false, $level = QR_ECLEVEL_L, int $size = 3, int $margin = 4, bool $saveAndPrint = false, int $back_color = QR_WHITE, int $fore_color = QR_BLACK) : void
+    public static function png (string $text, $outfile = false, $level = QR_ECLEVEL_L, int $size = 3, int $margin = 4, bool $saveAndPrint = false, int $back_color = QR_WHITE, int $fore_color = QR_BLACK)
     {
         $enc = Encoder::factory($level, $size, $margin, $back_color, $fore_color);
         $enc->encodePNG($text, $outfile, $saveAndPrint);
@@ -214,7 +214,7 @@ class QR_Code
      * @param int         $fore_color
      * @param bool        $cmyk
      */
-    public static function eps (string $text, $outfile = false, $level = QR_ECLEVEL_L, int $size = 3, int $margin = 4, bool $saveAndPrint = false, int $back_color = QR_WHITE, int $fore_color = QR_BLACK, bool $cmyk = false) : void
+    public static function eps (string $text, $outfile = false, $level = QR_ECLEVEL_L, int $size = 3, int $margin = 4, bool $saveAndPrint = false, int $back_color = QR_WHITE, int $fore_color = QR_BLACK, bool $cmyk = false)
     {
         $enc = Encoder::factory($level, $size, $margin, $back_color, $fore_color, $cmyk);
         $enc->encodeEPS($text, $outfile, $saveAndPrint);
@@ -230,7 +230,7 @@ class QR_Code
      * @param int         $back_color
      * @param int         $fore_color
      */
-    public static function svg (string $text, $outfile = false, $level = QR_ECLEVEL_L, int $size = 3, int $margin = 4, bool $saveAndPrint = false, int $back_color = QR_WHITE, int $fore_color = QR_BLACK) : void
+    public static function svg (string $text, $outfile = false, $level = QR_ECLEVEL_L, int $size = 3, int $margin = 4, bool $saveAndPrint = false, int $back_color = QR_WHITE, int $fore_color = QR_BLACK)
     {
         $enc = Encoder::factory($level, $size, $margin, $back_color, $fore_color);
         $enc->encodeSVG($text, $outfile, $saveAndPrint);

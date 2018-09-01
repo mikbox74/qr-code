@@ -125,7 +125,7 @@ abstract class AbstractGenerator
     /**
      * Stream and/or save PNG QR Code
      */
-    public function png () : void
+    public function png ()
     {
         QR_Code::png($this->getCodeString(), $this->outfile, $this->errorCorrectionLevel, $this->size, $this->margin, $this->saveAndPrint, $this->backColor, $this->foreColor);
     }
@@ -133,7 +133,7 @@ abstract class AbstractGenerator
     /**
      * Stream and/or save SVG QR Code
      */
-    public function svg () : void
+    public function svg ()
     {
         QR_Code::svg($this->getCodeString(), $this->outfile, $this->errorCorrectionLevel, $this->size, $this->margin, $this->saveAndPrint, $this->backColor, $this->foreColor);
     }

@@ -79,7 +79,7 @@ if (!function_exists('dropFilesBySubstring'))
      * @param string $directory
      * @param string $substring
      */
-    function dropFilesBySubstring(string $directory, string $substring) : void
+    function dropFilesBySubstring(string $directory, string $substring)
     {
         $files = scandir($directory);
 
@@ -117,7 +117,7 @@ if (!function_exists('strSet'))
      * @param string $repl
      * @param bool|int $replLen
      */
-    function strSet (array &$srctab, int $x, int $y, string $repl, $replLen = false) : void
+    function strSet (array &$srctab, int $x, int $y, string $repl, $replLen = false)
     {
         $srctab[$y] = substr_replace($srctab[$y], ($replLen !== false) ? substr($repl, 0, $replLen) : $repl, $x, ($replLen !== false) ? $replLen : strlen($repl));
     }

@@ -58,7 +58,7 @@ class QR_VCard extends AbstractGenerator implements CodeType
      * @param \QR_Code\Types\vCard\Phone[] $phones
      * @throws \QR_Code\Exceptions\InvalidVCardPhoneEntryException
      */
-    protected function validatePhones (array $phones) : void
+    protected function validatePhones (array $phones)
     {
         foreach ($phones as $phone) {
             if (!$phone instanceof Phone) {
@@ -71,7 +71,7 @@ class QR_VCard extends AbstractGenerator implements CodeType
      * @param \QR_Code\Types\vCard\Address[] $addresses
      * @throws \QR_Code\Exceptions\InvalidVCardAddressEntryException
      */
-    protected function validateAddresses (array $addresses) : void
+    protected function validateAddresses (array $addresses)
     {
         foreach ($addresses as $address) {
             if (!$address instanceof Address) {

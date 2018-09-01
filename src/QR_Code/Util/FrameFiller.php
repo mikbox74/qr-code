@@ -41,7 +41,7 @@ class FrameFiller
      * @param $at
      * @param $val
      */
-    public function setFrameAt ($at, $val) : void
+    public function setFrameAt ($at, $val)
     {
         $this->frame[$at['y']][$at['x']] = chr($val);
     }

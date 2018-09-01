@@ -21,7 +21,7 @@ class Logger
      * @param string|bool $outfile
      * @param string      $err
      */
-    public static function log ($outfile, string $err) : void
+    public static function log ($outfile, string $err)
     {
         if (QR_LOG_DIR !== false) {
             if ($err != '') {

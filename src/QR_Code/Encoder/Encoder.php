@@ -135,7 +135,7 @@ class Encoder
      * @param string|bool $outfile
      * @param bool        $saveAndPrint
      */
-    public function encodePNG (string $inText, $outfile = false, $saveAndPrint = false) : void
+    public function encodePNG (string $inText, $outfile = false, $saveAndPrint = false)
     {
         try {
 
@@ -162,7 +162,7 @@ class Encoder
      * @param string|bool $outfile
      * @param bool        $saveAndPrint
      */
-    public function encodeEPS (string $inText, $outfile = false, $saveAndPrint = false) : void
+    public function encodeEPS (string $inText, $outfile = false, $saveAndPrint = false)
     {
         try {
 
@@ -189,7 +189,7 @@ class Encoder
      * @param string|bool $outfile
      * @param bool        $saveAndPrint
      */
-    public function encodeSVG (string $inText, $outfile = false, $saveAndPrint = false) : void
+    public function encodeSVG (string $inText, $outfile = false, $saveAndPrint = false)
     {
         try {
 
